@@ -11,6 +11,7 @@ my_username = input("Enter your username: ") #each user gets a name (could be du
 print("Welcome! Right now, you'll have to hit 'enter' or send another message to update the chat")
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((IP, PORT))
+
 client_socket.setblocking(False) #do not block other operations 
 
 username = my_username.encode('utf-8')
